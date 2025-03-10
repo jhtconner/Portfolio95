@@ -120,6 +120,7 @@ function App() {
                             onClose={() => closeWindow(window.id)}
                             zIndex={window.zIndex}
                             onClick={() => activateWindow(window.id)}
+                            icon={desktopIcons.find(icon => icon.id === window.id)?.icon}
                         >
                             {window.id === 'welcome' && (
                                 <div className="dialog-content">
@@ -180,11 +181,121 @@ function App() {
 
 
                             {window.id === 'recycle-bin' && (
-                                <div>
-                                    <h3>Recycle Bin</h3>
-                                    <p>Github projects (cause they're all trash).</p>
+                                <div style={{ fontFamily: "'MS Sans Serif', 'Arial', sans-serif", padding: '8px' }}>
+                                    <h3 style={{
+                                        color: '#000',
+                                        fontSize: '14px',
+                                        fontWeight: 'bold',
+                                        textShadow: 'none'
+                                    }}>Check out my GitHub Projects!</h3>
+                                    <br />
+
+
+                                    <a
+                                        href="https://github.com/your-username/website"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="github-button"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            padding: '4px 8px',
+                                            backgroundColor: '#C0C0C0', // Classic Win95 gray
+                                            color: '#000000',
+                                            border: '2px outset #DFDFDF', // Outset border for 3D button effect
+                                            borderRadius: '0', // Square corners
+                                            textDecoration: 'none',
+                                            fontWeight: 'normal',
+                                            fontFamily: "'MS Sans Serif', Arial, sans-serif",
+                                            marginRight: '10px',
+                                            fontSize: '12px',
+                                            boxShadow: 'none', // No shadow in Windows 95
+                                            position: 'relative',
+                                            marginBottom: '8px',
+                                        }}
+                                        onMouseDown={(e) => e.currentTarget.style.border = '2px inset #DFDFDF'} // Press effect
+                                        onMouseUp={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'} // Release effect
+                                        onMouseLeave={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'} // Reset effect
+                                    >
+                                        <img
+                                            src="/favicon.png"
+                                            style={{ width: '20px', height: '20px', marginRight: '4px' }}
+                                        />
+                                        This Website!
+                                    </a>
+
+                                    <br />
+                                    <a
+                                        href="https://github.com/0x1kero/PokeDexJS"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="github-button"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            padding: '4px 8px',
+                                            backgroundColor: '#C0C0C0', // All buttons same gray in Win95
+                                            color: '#000000',
+                                            border: '2px outset #DFDFDF',
+                                            borderRadius: '0',
+                                            textDecoration: 'none',
+                                            fontWeight: 'normal',
+                                            fontFamily: "'MS Sans Serif', Arial, sans-serif",
+                                            marginRight: '10px',
+                                            fontSize: '12px',
+                                            boxShadow: 'none',
+                                            position: 'relative',
+                                            marginBottom: '8px',
+                                        }}
+                                        onMouseDown={(e) => e.currentTarget.style.border = '2px inset #DFDFDF'}
+                                        onMouseUp={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'}
+                                        onMouseLeave={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'}
+                                    >
+                                        <img
+                                            src="/images/MasterBall.png"
+                                            alt="Pokéball"
+                                            style={{ width: '20px', height: '20px', marginRight: '4px' }}
+                                        />
+                                        PokedexJS
+                                    </a>
+
+                                    <br />
+                                    <a
+                                        href="https://github.com/0x1kero/DotPlotHackathon"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="github-button"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            padding: '4px 8px',
+                                            backgroundColor: '#C0C0C0',
+                                            color: '#000000',
+                                            border: '2px outset #DFDFDF',
+                                            borderRadius: '0',
+                                            textDecoration: 'none',
+                                            fontWeight: 'normal',
+                                            fontFamily: "'MS Sans Serif', Arial, sans-serif",
+                                            marginRight: '10px',
+                                            fontSize: '12px',
+                                            boxShadow: 'none',
+                                            position: 'relative',
+                                            marginBottom: '8px',
+                                        }}
+                                        onMouseDown={(e) => e.currentTarget.style.border = '2px inset #DFDFDF'}
+                                        onMouseUp={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'}
+                                        onMouseLeave={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'}
+                                    >
+                                        <img
+                                            src="/images/doctor.png"
+                                            alt="Pokéball"
+                                            style={{ width: '20px', height: '22px', marginRight: '4px' }}
+                                        />
+                                        Medical Patient System
+                                    </a>
                                 </div>
                             )}
+
 
                             {window.id === 'my-documents' && (
                                 <div>
@@ -194,12 +305,183 @@ function App() {
                             )}
 
                             {window.id === 'internet-explorer' && (
-                                <div>
-                                    <h3>Internet Explorer</h3>
-                                    <p>whatever thiss could be </p>
+                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '10px', backgroundColor: 'white' }}>
+
+                                    <div style={{ textAlign: 'center', marginBottom: '15px', marginTop: '10px' }}>
+                                        <div style={{
+                                            fontSize: '70px',
+                                            fontWeight: 'bold',
+                                            letterSpacing: '-5px',
+                                            marginBottom: '5px'
+                                        }}>
+                                            <span style={{ color: 'black' }}>(N</span>
+                                            <span style={{ color: 'black' }}>o</span>
+                                            <span style={{ color: 'black' }}>t)</span>
+                                            <span style={{ color: '#4285F4' }}>G</span>
+                                            <span style={{ color: '#EA4335' }}>o</span>
+                                            <span style={{ color: '#FBBC05' }}>o</span>
+                                            <span style={{ color: '#4285F4' }}>g</span>
+                                            <span style={{ color: '#34A853' }}>l</span>
+                                            <span style={{ color: '#EA4335' }}>e</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div style={{
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        marginBottom: '20px'
+                                    }}>
+                                        <div style={{
+                                            border: '1px solid #CCCCCC',
+                                            width: '400px',
+                                            padding: '3px',
+                                            display: 'flex',
+                                            backgroundColor: 'white',
+                                            boxShadow: '1px 1px 2px rgba(0,0,0,0.1)'
+                                        }}>
+                                            <input
+                                                type="text"
+                                                value="What is your current achievements?"
+                                                readOnly
+                                                style={{
+                                                    flex: 1,
+                                                    border: 'none',
+                                                    fontSize: '13px',
+                                                    outline: 'none'
+                                                }}
+                                            />
+                                            <button style={{
+                                                backgroundColor: '#EEEEEE',
+                                                border: '1px solid #CCCCCC',
+                                                padding: '2px 6px',
+                                                fontSize: '11px',
+                                                cursor: 'default'
+                                            }}>
+                                                Search
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                    <div style={{ borderBottom: '1px solid #EEEEEE', paddingBottom: '10px', marginBottom: '15px', fontSize: '13px', color: '#666' }}>
+                                        About 125,000 results (0.24 seconds)
+                                    </div>
+
+
+                                    <div className="search-results" style={{ maxWidth: '600px', margin: '0 auto' }}>
+
+                                        <div style={{ marginBottom: '20px' }}>
+                                            <a
+                                                href="https://2024.nwerc.eu/"
+                                                style={{ fontSize: '16px', color: '#1a0dab', fontWeight: 'normal', marginBottom: '2px', cursor: 'pointer' }}
+                                            >
+                                                Participation in NWERC 2024
+                                            </a>
+                                            <div style={{ fontSize: '13px', color: '#006621', marginBottom: '3px' }}>
+                                                https://2024.nwerc.eu/
+                                            </div>
+                                            <div style={{ fontSize: '13px', color: '#545454', lineHeight: '1.4' }}>
+                                                I was fortunate enough to participate in my second NWERC alongside the same two amazing teammates. We managed to achieve
+                                                the highest finish in the history of our universities time of competing in the competition, and ate a lot of Dorito bits
+                                                while brainstorming some insane algorithms.
+                                            </div>
+                                        </div>
+
+
+                                        <div style={{ marginBottom: '20px' }}>
+                                            <a
+                                                href="https://ukiepc.info/2024/"
+                                                style={{ fontSize: '16px', color: '#1a0dab', fontWeight: 'normal', marginBottom: '2px', cursor: 'pointer' }}
+                                            >
+                                                Winner of the Brunel Univeristy of London UKIEPC 2024
+                                            </a>
+                                            <div style={{ fontSize: '13px', color: '#006621', marginBottom: '3px' }}>
+                                                https://ukiepc.info/2024/
+                                            </div>
+                                            <div style={{ fontSize: '13px', color: '#545454', lineHeight: '1.4' }}>
+                                                Worked alongside two teammates to tackle complex programming problems under a heavy time pressure, successfully outsmarting
+                                                years above and postgraduates for the second year in a row. Thank you to the Brunel CS department for the amazon gift cards! (I bought some IEMs B) )
+                                            </div>
+                                        </div>
+
+
+                                        <div style={{ marginBottom: '20px' }}>
+                                            <a
+                                                href="https://www.techacademia.co.uk/"
+                                                style={{ fontSize: '16px', color: '#1a0dab', fontWeight: 'normal', marginBottom: '2px', cursor: 'pointer' }}
+                                            >
+                                                Tech Academia x DotPlot accelerator programme hackathon
+                                            </a>
+                                            <div style={{ fontSize: '13px', color: '#006621', marginBottom: '3px' }}>
+                                                https://www.techacademia.co.uk/
+                                            </div>
+                                            <div style={{ fontSize: '13px', color: '#545454', lineHeight: '1.4' }}>
+                                                Selected for a high-speed, high-intensity Software & Data Engineering Accelerator Programme with TechAcademia
+                                                and DotPlot. Led the full-stack development of a breast cancer patient dashboard, all while ensuring my code didn’t crash before
+                                                the coffee wore off.
+                                            </div>
+                                        </div>
+
+
+                                        <div style={{ marginBottom: '20px' }}>
+                                            <a
+                                                href="https://2023.nwerc.eu/"
+                                                style={{ fontSize: '16px', color: '#1a0dab', fontWeight: 'normal', marginBottom: '2px', cursor: 'pointer' }}
+                                            >
+                                                Participation in NWERC 2023
+                                            </a>
+                                            <div style={{ fontSize: '13px', color: '#006621', marginBottom: '3px' }}>
+                                                https://2023.nwerc.eu/
+                                            </div>
+                                            <div style={{ fontSize: '13px', color: '#545454', lineHeight: '1.4' }}>
+                                                First time out of the country in 5 years, and a memory of what binary search is.
+                                                Although we didn’t win, I learned so much from the experience and it really solidified
+                                                my passion for competitive programming.
+                                            </div>
+                                        </div>
+
+                                        <div style={{ marginBottom: '20px' }}>
+                                            <a
+                                                href="https://ukiepc.info/2023/"
+                                                style={{ fontSize: '16px', color: '#1a0dab', fontWeight: 'normal', marginBottom: '2px', cursor: 'pointer' }}
+                                            >
+                                                Winner of the Brunel Univeristy of London UKIEPC 2023
+                                            </a>
+                                            <div style={{ fontSize: '13px', color: '#006621', marginBottom: '3px' }}>
+                                                https://ukiepc.info/2023/
+                                            </div>
+                                            <div style={{ fontSize: '13px', color: '#545454', lineHeight: '1.4' }}>
+                                                Outwitted, outprogrammed, and outlasted both undergraduates and postgraduates to become the first 1st years to win since 2018.
+                                                They said it couldn’t be done, so did we!
+                                            </div>
+                                        </div>
+
+                                        {/* Pagination */}
+                                        <div style={{
+                                            textAlign: 'center',
+                                            marginTop: '30px',
+                                            marginBottom: '20px',
+                                            fontFamily: 'Arial, sans-serif',
+                                            fontSize: '13px'
+                                        }}>
+                                            <span style={{ fontWeight: 'bold', color: '#1A0DAB' }}>G</span>
+                                            <span style={{ margin: '0 10px', color: '#1A0DAB', cursor: 'pointer' }}>1</span>
+                                            <span style={{ margin: '0 10px', color: '#1A0DAB', cursor: 'pointer' }}>2</span>
+                                            <span style={{ margin: '0 10px', color: '#1A0DAB', cursor: 'pointer' }}>3</span>
+                                            <span style={{ margin: '0 10px', color: '#1A0DAB', cursor: 'pointer' }}>4</span>
+                                            <span style={{ margin: '0 10px', color: '#1A0DAB', cursor: 'pointer' }}>5</span>
+                                            <span style={{ margin: '0 10px', color: '#1A0DAB', cursor: 'pointer' }}>Next &gt;</span>
+                                        </div>
+
+                                        <div style={{ fontSize: '11px', color: '#666', textAlign: 'center', marginTop: '40px', borderTop: '1px solid #EEEEEE', paddingTop: '10px' }}>
+                                            ©1998 Google - Searching John's achievements since the beginning of his career
+                                        </div>
+                                    </div>
                                 </div>
                             )}
                         </Window>
+
                     )
                 ))}
             </div>

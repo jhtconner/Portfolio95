@@ -6,7 +6,8 @@ const Window = ({
                     initialPosition = { x: 50, y: 50 },
                     initialSize = { width: 300, height: 200 },
                     onClose,
-                    zIndex = 100
+                    zIndex = 100,
+                    icon  // Add this new prop
                 }) => {
     const [position, setPosition] = useState(initialPosition);
     const [size, setSize] = useState(initialSize);
@@ -72,6 +73,7 @@ const Window = ({
                 className="window-header"
                 onMouseDown={handleMouseDown}
             >
+                {icon && <img src={icon} alt="" className="window-icon" />}
                 <div className="window-title">{title}</div>
                 <div className="window-controls">
                     <div className="window-control" onClick={onClose}>✕</div>
