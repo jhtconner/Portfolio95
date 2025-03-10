@@ -49,9 +49,13 @@ html, body, #root {
 }
 
 .desktop-icon img {
-  width: 32px;
-  height: 32px;
+  width: 75px;
+  height: 75px;
   margin-bottom: 5px;
+}
+
+.desktop-icon img:hover {
+  outline: 1px solid #c3c3c3;
 }
 
 
@@ -159,9 +163,10 @@ html, body, #root {
 }
 
 .desktop-icon img {
-  width: 32px;
-  height: 32px;
+  width: 75px;
+  height: 75px;
   margin-bottom: 5px;
+  object-fit: contain;
 }
 
 .desktop-icon-label {

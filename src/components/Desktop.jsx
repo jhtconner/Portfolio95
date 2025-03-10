@@ -7,7 +7,7 @@ const Desktop = ({ openWindow }) => {
 
 
     const desktopIcons = [
-        { id: 'my-computer', label: 'My Computer', icon: '/images/PC.png', initialPosition: { x: 20, y: 20 } },
+        { id: 'my-computer', label: 'Johns Computer', icon: '/images/PC.png', initialPosition: { x: 20, y: 20 } },
         { id: 'network', label: 'Network Neighborhood', icon: '/images/network.png', initialPosition: { x: 20, y: 100 } },
         { id: 'recycle-bin', label: 'Recycle Bin', icon: '/images/bin.png', initialPosition: { x: 20, y: 180 } },
         { id: 'my-documents', label: 'My Documents', icon: '/images/files.png', initialPosition: { x: 20, y: 260 } },

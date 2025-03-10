@@ -87,10 +87,10 @@ function App() {
 
 
     const desktopIcons = [
-        { id: 'my-computer', label: 'My Computer', icon: '/images/PC.png' },
+        { id: 'my-computer', label: 'Johns Computer', icon: '/images/PC.png' },
         { id: 'network', label: 'Network Neighborhood', icon: '/images/network.png' },
         { id: 'recycle-bin', label: 'Recycle Bin', icon: '/images/bin.png' },
-        { id: 'my-documents', label: 'My Documents', icon: '/images/file.png' },
+        { id: 'my-documents', label: 'Documents', icon: '/images/file.png' },
         { id: 'internet-explorer', label: 'Internet Explorer', icon: '/images/IE.png' }
     ];
 
@@ -129,7 +129,7 @@ function App() {
                                     <div className="dialog-text">
                                         <h2>Welcome to Windows 95 (John edition)</h2>
                                         <p>Did you know...</p>
-                                        <p>To open a program you just click the icon on the desktop {'>'} :) </p>
+                                        <p>To open a program you should double click its icon on the desktop {'>'} :) </p>
                                         <div className="dialog-buttons">
                                             <button className="dialog-button" onClick={() => closeWindow('welcome')}>Close</button>
                                         </div>
@@ -140,16 +140,44 @@ function App() {
                             {window.id === 'my-computer' && (
                                 <div>
                                     <h3>John's Computer</h3>
-                                    <p>This is where my work experience will be.</p>
+                                    <br></br>
+                                    <p>Hey i'm John! i'm a CS student and a full-stack developer with keen interests in Quant Finance, Machine Learning, and anything to do with coding.</p>
+                                    <br></br>
+                                    <p>I enjoy solving problems whether they're old and new, and love telling computers what to do.</p>
+                                    <br></br>
+                                    <p>This website was developed using ReactJS and my passion for Windows 95! (I wasn't born until 10 years later :p)</p>
                                 </div>
                             )}
 
+
                             {window.id === 'network' && (
                                 <div>
-                                    <h3>Network Neighborhood</h3>
-                                    <p>Embed linkedin maybe?</p>
+                                    <h3>Network with me on Linkedin!</h3>
+                                    <br></br>
+                                    <a
+                                        href="https://www.linkedin.com/in/jhtconner/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="linkedin-button"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            padding: '8px 12px',
+                                            backgroundColor: '#0077B5',
+                                            color: 'white',
+                                            borderRadius: '4px',
+                                            textDecoration: 'none',
+                                            fontWeight: 'bold'
+                                        }}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white" style={{marginRight: '8px'}}>
+                                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                        </svg>
+                                        View LinkedIn Profile
+                                    </a>
                                 </div>
                             )}
+
 
                             {window.id === 'recycle-bin' && (
                                 <div>
