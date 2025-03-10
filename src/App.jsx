@@ -201,7 +201,7 @@ function App() {
 
 
                                     <a
-                                        href="https://github.com/your-username/website"
+                                        href="https://github.com/0x1kero"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="github-button"
@@ -297,7 +297,7 @@ function App() {
                                     >
                                         <img
                                             src="/images/doctor.png"
-                                            alt="Pokéball"
+                                            alt="Doctor"
                                             style={{ width: '20px', height: '22px', marginRight: '4px' }}
                                         />
                                         Medical Patient System
