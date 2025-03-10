@@ -23,6 +23,8 @@ function App() {
     };
 
 
+
+
     const openWindow = (id, title) => {
         setWindows(prevWindows => {
 
@@ -87,7 +89,7 @@ function App() {
 
 
     const desktopIcons = [
-        { id: 'my-computer', label: 'Johns Computer', icon: '/images/PC.png' },
+        { id: 'my-computer', label: 'Johns Computer', icon: '/images/PC2.png' },
         { id: 'network', label: 'Network Neighborhood', icon: '/images/network.png' },
         { id: 'recycle-bin', label: 'Recycle Bin', icon: '/images/bin.png' },
         { id: 'my-documents', label: 'Documents', icon: '/images/file.png' },
@@ -95,7 +97,9 @@ function App() {
     ];
 
     return (
+
         <div className="windows95">
+
             <div className="desktop">
 
                 <div className="desktop-icons">
@@ -109,6 +113,10 @@ function App() {
                             <div className="desktop-icon-label">{icon.label}</div>
                         </div>
                     ))}
+                </div>
+
+                <div>
+                    <audio src="/sound/StartUp.mp3" autoPlay></audio>
                 </div>
 
 
@@ -125,12 +133,13 @@ function App() {
                             {window.id === 'welcome' && (
                                 <div className="dialog-content">
                                     <div className="dialog-image">
-                                        <img src="/images/info.png" alt="Information" width="32" height="32" />
+                                        <img src="/images/info.png" alt="Information" width="80" height="80" />
                                     </div>
                                     <div className="dialog-text">
                                         <h2>Welcome to Windows 95 (John edition)</h2>
                                         <p>Did you know...</p>
-                                        <p>To open a program you should double click its icon on the desktop {'>'} :) </p>
+                                        <br />
+                                        <p>To open a program you can double click its icon on the desktop.</p>
                                         <div className="dialog-buttons">
                                             <button className="dialog-button" onClick={() => closeWindow('welcome')}>Close</button>
                                         </div>
@@ -139,7 +148,7 @@ function App() {
                             )}
 
                             {window.id === 'my-computer' && (
-                                <div>
+                                <div className="computer-app" style={{backgroundColor: 'white', height: '110%', margin: '-10px', padding: '10px'}}>
                                     <h3>About me</h3>
                                     <br></br>
                                     <p>Hey i'm John! i'm a CS student and a full-stack developer with keen interests in Quant Finance, Machine Learning, and anything to do with coding.</p>
@@ -152,7 +161,7 @@ function App() {
 
 
                             {window.id === 'network' && (
-                                <div>
+                                <div className="LinkedIn-app" style={{backgroundColor: 'white', height: '110%', margin: '-10px', padding: '10px'}}>
                                     <h3>Network with me on Linkedin!</h3>
                                     <br></br>
                                     <a
@@ -299,13 +308,44 @@ function App() {
 
                             {window.id === 'my-documents' && (
                                 <div>
-                                    <h3>My Documents</h3>
-                                    <p>again maybe cv or something else</p>
+                                    <a
+                                        href="https://github.com/0x1kero"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="github-button"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            padding: '4px 8px',
+                                            backgroundColor: '#C0C0C0',
+                                            color: '#000000',
+                                            border: '2px outset #DFDFDF',
+                                            borderRadius: '0',
+                                            textDecoration: 'none',
+                                            fontWeight: 'normal',
+                                            fontFamily: "'MS Sans Serif', Arial, sans-serif",
+                                            marginRight: '10px',
+                                            fontSize: '12px',
+                                            boxShadow: 'none',
+                                            position: 'relative',
+                                            marginBottom: '8px',
+                                        }}
+                                        onMouseDown={(e) => e.currentTarget.style.border = '2px inset #DFDFDF'}
+                                        onMouseUp={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'}
+                                        onMouseLeave={(e) => e.currentTarget.style.border = '2px outset #DFDFDF'}
+                                    >
+                                        <img
+                                            src="/images/cv.png"
+                                            alt="Pokéball"
+                                            style={{ width: '37px', height: '37px', marginRight: '4px' }}
+                                        />
+                                        My CV
+                                    </a>
                                 </div>
                             )}
 
                             {window.id === 'internet-explorer' && (
-                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '10px', backgroundColor: 'white' }}>
+                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '10px', backgroundColor: 'white', height: '125%', margin: '-10px' }}>
 
                                     <div style={{ textAlign: 'center', marginBottom: '15px', marginTop: '10px' }}>
                                         <div style={{

@@ -76,7 +76,7 @@ html, body, #root {
 
 .taskbar {
   background-color: #c0c0c0;
-  width: 125%;
+  width: 100%;
   height: 35px;
   display: flex;
   align-items: center;
@@ -147,10 +147,12 @@ html, body, #root {
 
 .desktop-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 110px);
+  grid-template-columns: 1fr;
+  grid-auto-rows: 140px;
   grid-gap: 20px;
   padding: 10px;
 }
+
 
 .desktop-icon {
   width: 100px;
@@ -163,8 +165,8 @@ html, body, #root {
 }
 
 .desktop-icon img {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   margin-bottom: 5px;
   object-fit: contain;
 }
@@ -179,16 +181,12 @@ html, body, #root {
 
 
 .window {
-  background-color: #c0c0c0;
+  background-color: #808080;
   position: absolute;
   min-width: 200px;
   min-height: 150px;
   box-shadow: 1px 1px 0 #000000;
-  border: 1px solid #c0c0c0;
-  border-top-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
+  border: 2px solid #c0c0c0;
   border-top-color: #dfdfdf;
   border-left-color: #dfdfdf;
   border-right-color: #404040;
@@ -199,9 +197,9 @@ html, body, #root {
 }
 
 .window-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
+  width: 32px;
+  height: 32px;
+  margin-right: 1px;
 }
 
 .window-header {
