@@ -139,7 +139,7 @@ function App() {
 
                             {window.id === 'my-computer' && (
                                 <div>
-                                    <h3>John's Computer</h3>
+                                    <h3>About me</h3>
                                     <br></br>
                                     <p>Hey i'm John! i'm a CS student and a full-stack developer with keen interests in Quant Finance, Machine Learning, and anything to do with coding.</p>
                                     <br></br>
