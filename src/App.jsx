@@ -336,7 +336,7 @@ function App() {
                                     >
                                         <img
                                             src="/images/cv.png"
-                                            alt="Pokéball"
+                                            alt="CV"
                                             style={{ width: '37px', height: '37px', marginRight: '4px' }}
                                         />
                                         My CV
@@ -345,7 +345,7 @@ function App() {
                             )}
 
                             {window.id === 'internet-explorer' && (
-                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '10px', backgroundColor: 'white', height: '125%', margin: '-10px' }}>
+                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '10px', backgroundColor: 'white', height: '175%', margin: '-10px' }}>
 
                                     <div style={{ textAlign: 'center', marginBottom: '15px', marginTop: '10px' }}>
                                         <div style={{
