@@ -344,8 +344,18 @@ function App() {
                                 </div>
                             )}
 
+
                             {window.id === 'internet-explorer' && (
-                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '10px', backgroundColor: 'white', height: '175%', margin: '-10px' }}>
+                                <div style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    right: 0,
+                                    bottom: 0,
+                                    backgroundColor: 'white'
+                                }}>
+
+                                <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '50px', backgroundColor: 'white', height: '175%', margin: '-15px' }}>
 
                                     <div style={{ textAlign: 'center', marginBottom: '15px', marginTop: '10px' }}>
                                         <div style={{
@@ -365,6 +375,7 @@ function App() {
                                             <span style={{ color: '#EA4335' }}>e</span>
                                         </div>
                                     </div>
+
 
 
                                     <div style={{
@@ -519,6 +530,7 @@ function App() {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             )}
                         </Window>
 
