@@ -49,7 +49,7 @@ const InternetExplorerWindow = ({}) => {
                     }}>
                         <input
                             type="text"
-                            value="What is your current achievements?"
+                            value="What are John's notable experiences/achievements?"
                             readOnly
                             style={{
                                 flex: 1,
@@ -118,7 +118,7 @@ const InternetExplorerWindow = ({}) => {
                             href="https://www.techacademia.co.uk/"
                             style={{ fontSize: '16px', color: '#1a0dab', fontWeight: 'normal', marginBottom: '2px', cursor: 'pointer' }}
                         >
-                            Tech Academia x DotPlot accelerator programme hackathon
+                            Tech Academia x DotPlot accelerator programme hackathon participant
                         </a>
                         <div style={{ fontSize: '13px', color: '#006621', marginBottom: '3px' }}>
                             https://www.techacademia.co.uk/
@@ -160,7 +160,7 @@ const InternetExplorerWindow = ({}) => {
                         </div>
                         <div style={{ fontSize: '13px', color: '#545454', lineHeight: '1.4' }}>
                             Outwitted, outprogrammed, and outlasted both undergraduates and postgraduates to become the first 1st years to win since 2018.
-                            They said it couldn’t be done, so did we!
+                            Thank you April! ^_^
                         </div>
                     </div>
 
@@ -182,7 +182,7 @@ const InternetExplorerWindow = ({}) => {
                     </div>
 
                     <div style={{ fontSize: '11px', color: '#666', textAlign: 'center', marginTop: '40px', borderTop: '1px solid #EEEEEE', paddingTop: '10px' }}>
-                        ©1998 Google - Searching John's achievements since the beginning of his career
+                        ©1998 Google
                     </div>
                 </div>
             </div>
