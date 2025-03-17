@@ -4,7 +4,7 @@ const RecycleBinWindow = () => {
     return (
         <div style={{ fontFamily: "'MS Sans Serif', 'Arial', sans-serif", padding: '8px' }}>
             <h3 style={{
-                color: '#000',
+                color: 'white',
                 fontSize: '14px',
                 fontWeight: 'bold',
                 textShadow: 'none'

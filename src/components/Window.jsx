@@ -4,7 +4,7 @@ const Window = ({
                     title,
                     children,
                     initialPosition = { x: 50, y: 50 },
-                    initialSize = { width: 300, height: 200 },
+                    initialSize = { width: 375, height: 200 },
                     onClose,
                     zIndex = 100,
                     icon  // Add this new prop
