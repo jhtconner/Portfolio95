@@ -1,12 +1,28 @@
-# React + Vite
+# Portfolio95
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro style portfolio website inspired by the aesthetics of Windows 95.
 
-Currently, two official plugins are available:
+The website serves as my personal portfolio to showcase my projects, skills, and contact information in an interactive and nostalgic interface reminiscent of the Windows 95 operating system. Users can navigate through different windows, open applications, and experience a unique blend of old school design rebuilt with modern web technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you'd like to explore the portfolio, please visit this [link](https://0x1kero.dev/).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Screenshots
+
+**Main landing page**
+![Main Landing Page](https://i.postimg.cc/L4V2tbSL/Screenshot-2025-03-20-at-15-23-12.png)
+
+**Application Windows**
+![Application Windows](https://i.postimg.cc/rmKZDzqf/Screenshot-2025-03-20-at-15-24-14.png)
+
+
+## Technology Used
+
+**Markup and Styling:** HTML, CSS (including custom Windows 95-style UI elements).
+
+**Languages:** Javascript (ReactJS).
+
+**Version Control:** Git.
+
+Special thanks to [OldWindowsIcons](https://oldwindowsicons.tumblr.com/) for preserving all the old Windows 95 icons, and to every open source library that helped bring this project to life.
+
