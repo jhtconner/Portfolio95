@@ -82,7 +82,7 @@ const DocumentsWindow = () => {
                 flex: 1,
                 borderTop: '1px solid #fff'
             }}>
-                {/* Left Panel (Folders) */}
+
                 <div className="folder-tree" style={{
                     width: '25%',
                     borderRight: '2px solid #C0C0C0',
@@ -200,7 +200,7 @@ const DocumentsWindow = () => {
     );
 };
 
-// helper styles
+
 const ToolbarButton = ({ label }) => (
     <button style={{
         padding: '2px 5px',

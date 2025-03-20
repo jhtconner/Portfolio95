@@ -164,7 +164,7 @@ const InternetExplorerWindow = ({}) => {
                         </div>
                     </div>
 
-                    {/* Pagination */}
+
                     <div style={{
                         textAlign: 'center',
                         marginTop: '30px',

@@ -34,7 +34,7 @@ const RecycleBinWindow = () => {
     );
 };
 
-// github button
+
 const GitHubButton = ({ href, label, icon }) => {
     return (
         <a
