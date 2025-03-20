@@ -12,7 +12,7 @@ const RecycleBinWindow = () => {
             <br />
 
             <GitHubButton
-                href="https://github.com/0x1kero"
+                href="https://github.com/0x1kero/Portfolio95"
                 label="This Website!"
                 icon="/favicon.png"
             />
