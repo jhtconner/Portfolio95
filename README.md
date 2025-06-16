@@ -16,6 +16,17 @@ If you'd like to explore the portfolio, please visit this [link](https://0x1kero
 ![Application Windows](https://i.postimg.cc/rmKZDzqf/Screenshot-2025-03-20-at-15-24-14.png)
 
 
+# Known issues/New Features 
+
+- [ ] Window names overlapping on taskbar
+- [ ] Custom window size per app
+- [ ] Functional start  menu
+- [ ] Network Neighborhood styling
+- [ ] Adding CV and other documents to file manager
+
+
+
+
 ## Technology Used
 
 **Markup and Styling:** HTML, CSS (including custom Windows 95-style UI elements).
