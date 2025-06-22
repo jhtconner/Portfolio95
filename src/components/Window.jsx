@@ -4,10 +4,10 @@ const Window = ({
                     title,
                     children,
                     initialPosition = { x: 50, y: 50 },
-                    initialSize = { width: 375, height: 200 },
+                    initialSize = { width: 525, height: 295 },
                     onClose,
                     zIndex = 100,
-                    icon  // Add this new prop
+                    icon
                 }) => {
     const [position, setPosition] = useState(initialPosition);
     const [size, setSize] = useState(initialSize);

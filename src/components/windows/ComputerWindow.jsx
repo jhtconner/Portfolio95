@@ -6,7 +6,17 @@ const CommandPrompt = () => {
         'Microsoft(R) Windows 95',
         '(C)Copyright Microsoft Corp 1981-1995.',
         '',
-        'C:\\USERS\\JCONNER> Type "help" for available commands'
+        'C:\\USERS\\JCONNER> Type "help" for available commands',
+        '',
+        'Available commands:',
+        '  about       - Display information about me',
+        '  education   - My educational background',
+        '  skills      - My technical skills',
+        '  projects    - All the cool projects made by me',
+        '  contact     - My contact information',
+        '  clear       - Clear the terminal window',
+        '  exit        - Close this window (just x out)',
+        ''
     ]);
     const inputRef = useRef(null);
     const outputRef = useRef(null);
@@ -47,7 +57,7 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'NAME: John Conner',
-                'OCCUPATION: CS Student & Full-Stack Developer',
+                'OCCUPATION: SWE Intern @ Compare the Market',
                 'INTERESTS: Quant Finance, Machine Learning, and anything to do with coding.',
                 'BIO: I enjoy solving problems whether they\'re old or new, and love telling computers how to beep and boop.',
                 '\u00A0',
@@ -71,9 +81,9 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'TECHNICAL SKILLS:',
-                '  • Languages: Java, Python, Javascript, SQL',
+                '  • Languages: Java, Python, Javascript, C#, Typescript, SQL',
                 '  • Frameworks: Django, Spring Boot, React.js',
-                '  • Dev Tools: NeoVim, IntelliJ, Webstorm, Pycharm, Git, Eclipse ',
+                '  • Dev Tools: NeoVim, IntelliJ, Webstorm, Pycharm, Git ',
                 '  • Software Tools: Trello, Teams, Slack.',
                 '\u00A0'
             );
@@ -138,6 +148,7 @@ const CommandPrompt = () => {
             backgroundColor: '#000',
             color: '#15f71c',
             fontFamily: 'Courier New, monospace',
+            fontSize: '13px',
             height: '175%',
             width: '100%',
             margin: '-15px',

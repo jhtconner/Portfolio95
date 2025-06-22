@@ -284,7 +284,7 @@ html, body, #root {
 }
 
 .dialog-text {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .dialog-buttons {
@@ -295,7 +295,7 @@ html, body, #root {
 }
 
 .dialog-button {
-  min-width: 75px;
+  min-width: 90px;
   padding: 4px 8px;
   font-size: 11px;
   background-color: #c0c0c0;
