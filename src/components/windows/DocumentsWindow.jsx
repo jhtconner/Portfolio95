@@ -10,9 +10,7 @@ const DocumentsWindow = () => {
             { name: 'Resume', icon: '/images/file.png' }
         ],
         files: [
-            { name: 'CV.doc', icon: '/images/cv.png', link: 'https://github.com/0x1kero' },
-            { name: 'References.doc', icon: '/images/cv.png' },
-            { name: 'Portfolio.pdf', icon: '/images/cv.png' }
+            { name: 'CV.doc', icon: '/images/cv.png', link: 'https://1drv.ms/b/c/ca75e757ca250c71/EV210mbN19RIlR_Q3qFICy4By35RGb0Um_omXGKJ1WkdhA?e=dB3AP6' },
         ]
     };
 

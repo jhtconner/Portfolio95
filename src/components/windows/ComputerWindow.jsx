@@ -57,7 +57,7 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'NAME: John Conner',
-                'OCCUPATION: SWE Intern @ Compare the Market',
+                'OCCUPATION: Software Engineer',
                 'INTERESTS: Quant Finance, Machine Learning, and anything to do with coding.',
                 'BIO: I enjoy solving problems whether they\'re old or new, and love telling computers how to beep and boop.',
                 '\u00A0',
@@ -81,9 +81,9 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'TECHNICAL SKILLS:',
-                '  • Languages: Java, Python, Javascript, C#, Typescript, SQL',
-                '  • Frameworks: Django, Spring Boot, React.js',
-                '  • Dev Tools: NeoVim, IntelliJ, Webstorm, Pycharm, Git ',
+                '  • Languages: Java, Python, Javascript, Typescript, SQL',
+                '  • Frameworks: Django, Spring Boot, React, Express, Nunjucks, Alpine',
+                '  • Dev Tools: NeoVim, IntelliJ, Webstorm, Pycharm, Git',
                 '  • Software Tools: Trello, Teams, Slack.',
                 '\u00A0'
             );
@@ -92,9 +92,9 @@ const CommandPrompt = () => {
                 '\u00A0',
                 'PROJECT EXPERIENCE:',
                 '  • Windows 95 themed portfolio website (ReactJS)',
-                '  • Mental Health resource/support platform (ReactJS + Spring Boot',
+                '  • Mental Health resource/support platform (ReactJS + Spring Boot)',
                 '  • Breast Cancer patient dashboard (Javascript + Django)',
-                '  • PokeDex website (Javascript))',
+                '  • PokeDex website (Javascript)',
                 '  • Python OS based scripts (Python)',
                 '\u00A0',
                 'Github repos can be found in the recycling application on the desktop :)',
