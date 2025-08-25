@@ -8,10 +8,11 @@ const InternetExplorerWindow = ({}) => {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'white'
+            backgroundColor: 'white',
+            overflow:'auto'
         }}>
 
-            <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '50px', backgroundColor: 'white', height: '175%', margin: '-15px' }}>
+            <div className="google-container" style={{ fontFamily: "'Arial', sans-serif", padding: '50px', backgroundColor: 'white', minHeight: '100%', boxSizing: 'border-box'}}>
 
                 <div style={{ textAlign: 'center', marginBottom: '15px', marginTop: '10px' }}>
                     <div style={{
