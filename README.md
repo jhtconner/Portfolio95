@@ -18,11 +18,9 @@ If you'd like to explore the portfolio, please visit this [link](https://0x1kero
 
 # Known issues/New Features 
 
-- [ ] Window names overlapping on taskbar
 - [ ] Custom window size per app
 - [ ] Functional start  menu
-- [ ] Network Neighborhood styling
-- [ ] Adding CV and other documents to file manager
+- [ ] Internet explorer window has grey affect when smaller sized.
 
 
 
