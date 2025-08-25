@@ -10,10 +10,10 @@ If you'd like to explore the portfolio, please visit this [link](https://0x1kero
 # Screenshots
 
 **Main landing page**
-![Main Landing Page](https://i.postimg.cc/L4V2tbSL/Screenshot-2025-03-20-at-15-23-12.png)
+![Main Landing Page](https://i.postimg.cc/rwY8DxxR/landing.png)
 
 **Application Windows**
-![Application Windows](https://i.postimg.cc/rmKZDzqf/Screenshot-2025-03-20-at-15-24-14.png)
+![Application Windows](https://i.postimg.cc/X74NmVnq/windows.png)
 
 
 # Known issues/New Features 
