@@ -1,31 +1,92 @@
 import React from 'react';
 
 const NetworkWindow = () => {
+    const handleConnect = () => {
+        window.open('https://www.linkedin.com/in/jhtconner/', '_blank', 'noopener,noreferrer');
+    };
+
     return (
-        <div className="LinkedIn-app" style={{backgroundColor: 'white', height: '110%', margin: '-10px', padding: '10px'}}>
-            <h3>Network with me on Linkedin!</h3>
-            <br />
-            <a
-                href="https://www.linkedin.com/in/jhtconner/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="linkedin-button"
-                style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    padding: '8px 12px',
-                    backgroundColor: '#0077B5',
-                    color: 'white',
-                    borderRadius: '4px',
-                    textDecoration: 'none',
-                    fontWeight: 'bold'
-                }}
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white" style={{marginRight: '8px'}}>
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-                View LinkedIn Profile
-            </a>
+        <div className="LinkedIn-app" style={{
+            backgroundColor: '#808080',
+            height: '110%',
+            margin: '-10px',
+            padding: '10px',
+            fontFamily: 'MS Sans Serif, sans-serif',
+            fontSize: '11px',
+            display: 'flex'
+        }}>
+            <div style={{
+                width: '140px',
+                flexShrink: 0,
+                backgroundColor: '#008080',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+                <img
+                    src="/images/networkNeighborhood.png"
+                    alt="Network Connection"
+                    style={{
+                        width: '125px',
+                        height: '220px'
+                    }}
+                />
+            </div>
+
+            <div style={{
+                flex: 1,
+                padding: '15px 20px',
+                backgroundColor: '#808080',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                minHeight: '200px'
+            }}>
+                <div>
+                    <p style={{ margin: '0 0 15px 0', lineHeight: '1.3', color: 'white' }}>
+                        You have successfully created a new Networking connection called:
+                    </p>
+
+                    <div style={{
+                        border: '1px inset #c0c0c0',
+                        padding: '4px 6px',
+                        backgroundColor: '#d4d4d4',
+                        marginBottom: '15px',
+                        fontSize: '11px',
+                    }}>
+                        LinkedIn
+                    </div>
+
+                    <p style={{ margin: '0 0 10px 0', lineHeight: '1.3', color: 'white' }}>
+                        Click Connect to have my LinkedIn pop up in a new tab. Looking forward to connecting! :)
+                    </p>
+
+                </div>
+
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'flex-end',
+                    gap: '8px',
+                    paddingTop: '15px'
+                }}>
+                    <button
+                        onClick={handleConnect}
+                        style={{
+                            minWidth: '90px',
+                            padding: '4px 8px',
+                            fontSize: '11px',
+                            backgroundColor: '#c0c0c0',
+                            borderTop: '1px solid #ffffff',
+                            borderLeft: '1px solid #ffffff',
+                            borderRight: '1px solid #404040',
+                            borderBottom: '1px solid #404040',
+                            cursor: 'pointer',
+                        }}
+                    >
+                        Connect
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };

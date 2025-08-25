@@ -10,9 +10,11 @@ const WelcomeWindow = ({ closeWindow }) => {
                 <h2>Welcome to Windows 95!</h2>
                 <p>Did you know...</p>
                 <br />
-                <p>To open a program you can double click its icon on the desktop.</p>
+                <p>- To open a program you can double click its icon on the desktop.</p>
                 <br />
-                <p>You can also make windows larger by dragging them from the bottom right corner!</p>
+                <p>- Windows can be dragged using the window bar, feel free to dump them anywhere over the desktop.</p>
+                <br />
+                <p>- You can also make windows larger by dragging them from the bottom right corner!</p>
                 <br/>
                 <br/>
                 <p>＼(＾O＾)／ Welcome to the Future... in 1995.</p>
