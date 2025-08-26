@@ -20,7 +20,6 @@ If you'd like to explore the portfolio, please visit this [link](https://0x1kero
 
 - [ ] Custom window size per app
 - [ ] Functional start  menu
-- [ ] Internet explorer window has grey affect when smaller sized.
 
 
 
