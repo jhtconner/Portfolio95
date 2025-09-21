@@ -12,21 +12,21 @@ const RecycleBinWindow = () => {
             <br />
 
             <GitHubButton
-                href="https://github.com/0x1kero/Portfolio95"
+                href="https://github.com/jhtconner/Portfolio95"
                 label="This Website!"
                 icon="/favicon.png"
             />
 
             <br />
             <GitHubButton
-                href="https://github.com/0x1kero/PokeDexJS"
+                href="https://github.com/jhtconner/PokeDexJS"
                 label="PokedexJS"
                 icon="/images/MasterBall.png"
             />
 
             <br />
             <GitHubButton
-                href="https://github.com/0x1kero/DotPlotHackathon"
+                href="https://github.com/jhtconner/DotPlotHackathon"
                 label="Medical Patient System"
                 icon="/images/doctor.png"
             />

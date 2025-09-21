@@ -6,7 +6,7 @@ const CommandPrompt = () => {
         'Microsoft(R) Windows 95',
         '(C)Copyright Microsoft Corp 1981-1995.',
         '',
-        'C:\\USERS\\JCONNER> Type "help" for available commands',
+        'C:\\USERS\\JHTCONNER> Type "help" for available commands',
         '',
         'Available commands:',
         '  about       - Display information about me',
@@ -105,7 +105,7 @@ const CommandPrompt = () => {
                 '\u00A0',
                 'CONTACT INFORMATION:',
                 '  • Email: JHTConner@outlook.com',
-                '  • GitHub: github.com/0x1kero',
+                '  • GitHub: github.com/jhtconner',
                 '  • LinkedIn: linkedin.com/in/jhtconner',
                 '\u00A0'
             );
@@ -115,7 +115,7 @@ const CommandPrompt = () => {
                 'Microsoft(R) Windows 95',
                 '(C)Copyright Microsoft Corp 1981-1995.',
                 '\u00A0',
-                'C:\\USERS\\JCONNER> Type "help" for available commands',
+                'C:\\USERS\\JHTConner> Type "help" for available commands',
                 '\u00A0'
             ]);
             return;
@@ -162,7 +162,7 @@ const CommandPrompt = () => {
                     <div key={i} className="whitespace-pre-wrap">{line}</div>
                 ))}
                 <div className="flex">
-                    <div>C:\USERS\JCONNER&gt; </div>
+                    <div>C:\USERS\JHTCONNER&gt; </div>
                     <input
                         ref={inputRef}
                         type="text"
