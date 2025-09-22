@@ -69,20 +69,7 @@ const NetworkWindow = () => {
                     gap: '8px',
                     paddingTop: '15px'
                 }}>
-                    <button
-                        onClick={handleConnect}
-                        style={{
-                            minWidth: '90px',
-                            padding: '4px 8px',
-                            fontSize: '11px',
-                            backgroundColor: '#c0c0c0',
-                            borderTop: '1px solid #ffffff',
-                            borderLeft: '1px solid #ffffff',
-                            borderRight: '1px solid #404040',
-                            borderBottom: '1px solid #404040',
-                            cursor: 'pointer',
-                        }}
-                    >
+                    <button onClick={handleConnect} className="dialog-button">
                         Connect
                     </button>
                 </div>

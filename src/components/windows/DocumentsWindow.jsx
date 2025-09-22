@@ -167,7 +167,7 @@ const DocumentsWindow = () => {
                             className="file-item"
                             style={{
                                 width: '100px',
-                                margin: '5px',
+                                marginTop: '20px',
                                 textAlign: 'center',
                                 cursor: 'pointer',
                                 textDecoration: 'none',
@@ -177,9 +177,9 @@ const DocumentsWindow = () => {
                             <img
                                 src={file.icon}
                                 alt={file.name}
-                                style={{ width: '32px', height: '32px' }}
+                                style={{ width: '35px', height: '35px' }}
                             />
-                            <div style={{ fontSize: '12px', marginTop: '5px' }}>{file.name}</div>
+                            <div style={{ fontSize: '12px', marginTop: '26px' }}>{file.name}</div>
                         </a>
                     ))}
                 </div>
