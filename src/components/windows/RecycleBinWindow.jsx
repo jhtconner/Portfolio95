@@ -30,6 +30,20 @@ const RecycleBinWindow = () => {
                 label="Medical Patient System"
                 icon="/images/doctor.png"
             />
+
+            <br />
+            <GitHubButton
+                href="https://github.com/jhtconner/RWFM-72"
+                label="RWFM-72"
+                icon="/images/windturbine.png"
+            />
+
+            <br />
+            <GitHubButton
+                href="https://github.com/jhtconner/RWFM72-webapp"
+                label="RWFM-72 Web-App"
+                icon="/images/windmap.png"
+            />
         </div>
     );
 };

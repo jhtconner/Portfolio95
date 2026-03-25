@@ -57,8 +57,8 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'NAME: John Conner',
-                'OCCUPATION: Software Engineer',
-                'INTERESTS: Quant Finance, Machine Learning, and anything to do with coding.',
+                'OCCUPATION: Graduate Software Engineer at CTM',
+                'INTERESTS: Software Engineering, Machine Learning, and anything to do with coding.',
                 'BIO: I enjoy solving problems whether they\'re old or new, and love telling computers how to beep and boop.',
                 '\u00A0',
                 'ᕕ( ᐛ )ᕗ ',
@@ -69,7 +69,7 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'EDUCATION:',
-                '  • BSc Computer Science, Brunel University London (current)',
+                '  • BSc Computer Science, Brunel University London - Graduation July \'26',
                 '      - Specialization in Software Engineering',
                 '      - Key Modules: DSA, Data & Information, Group project',
                 '\u00A0',
@@ -81,21 +81,22 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'TECHNICAL SKILLS:',
-                '  • Languages: Java, Python, Javascript, Typescript, SQL',
+                '  • Languages: Java, Python, Javascript, Typescript, C, SQL',
                 '  • Frameworks: Django, Spring Boot, React, Express, Nunjucks, Alpine',
                 '  • Dev Tools: NeoVim, IntelliJ, Webstorm, Pycharm, Git',
-                '  • Software Tools: Trello, Teams, Slack.',
+                '  • Software Tools: Jira, Trello, Teams, Slack.',
                 '\u00A0'
             );
         } else if (command === 'projects') {
             newOutput.push(
                 '\u00A0',
                 'PROJECT EXPERIENCE:',
+                '  • Wind Forecasting ML Model - RWFM-72 (Python)',
+                '  • Wind Map Web App for RWFM-72 (ReactJS + FastAPI)',
                 '  • Windows 95 themed portfolio website (ReactJS)',
                 '  • Mental Health resource/support platform (ReactJS + Spring Boot)',
                 '  • Breast Cancer patient dashboard (Javascript + Django)',
                 '  • PokeDex website (Javascript)',
-                '  • Python OS based scripts (Python)',
                 '\u00A0',
                 'Github repos can be found in the recycling application on the desktop :)',
                 '\u00A0'
