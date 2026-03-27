@@ -19,7 +19,6 @@ const CommandPrompt = () => {
         ''
     ]);
     const inputRef = useRef(null);
-    const outputRef = useRef(null);
 
     const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
@@ -27,10 +26,10 @@ const CommandPrompt = () => {
         }
     };
 
+    const bottomRef = useRef(null);
+
     useEffect(() => {
-        if (outputRef.current) {
-            outputRef.current.scrollTop = outputRef.current.scrollHeight;
-        }
+        bottomRef.current?.scrollIntoView({ behavior: 'auto' });
         if (inputRef.current) {
             inputRef.current.focus();
         }
@@ -142,54 +141,60 @@ const CommandPrompt = () => {
         setInput('');
     };
 
-
     return (
-        <div className="Computer-Window" style={{
-            position: 'absolute',
-            backgroundColor: '#000',
-            color: '#15f71c',
-            fontFamily: 'Courier New, monospace',
-            fontSize: '11px',
-            height: '175%',
-            width: '100%',
-            margin: '-15px',
-            padding: '17px',
-            boxSizing: 'border-box',
-            overflow: 'auto',
-
-        }}>
-            <div className="flex-1 overflow-auto" ref={outputRef} style={{minHeight: '250px'}}>
-                {outputLines.map((line, i) => (
-                    <div key={i} className="whitespace-pre-wrap">{line}</div>
-                ))}
-                <div className="flex">
-                    <div>C:\USERS\JHTCONNER&gt; </div>
-                    <input
-                        ref={inputRef}
-                        type="text"
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        onKeyDown={handleKeyDown}
-                        className="bg-black text-gray-300 outline-none border-none p-0 m-0 w-full"
-                        style={{
-                            caretColor: '#15f71c',
-                            fontFamily: 'Courier New, monospace',
-                            backgroundColor: 'transparent',
-                            color: '#15f71c',
-                            display: 'inline',
-                            fontSize: 'inherit',
-                            lineHeight: 'inherit',
-                            boxSizing: 'border-box',
-                            top: '0',
-                            left: '0'
-                        }}
-                        autoFocus
-                    />
+        <>
+            <style>{`
+            .Computer-Window::-webkit-scrollbar { display: none; }
+            .Computer-Window { scrollbar-width: none; }
+            `}</style>
+            <div className="Computer-Window" style={{
+                position: 'absolute',
+                backgroundColor: '#000',
+                color: '#15f71c',
+                fontFamily: 'Courier New, monospace',
+                fontSize: '12px',
+                height: '100%',
+                width: '100%',
+                margin: '-15px',
+                padding: '17px',
+                boxSizing: 'border-box',
+                overflow: 'auto',
+                display: 'flex',
+                flexDirection: 'column',
+            }}>
+                <div style={{ marginTop: 'auto' }}>
+                    {outputLines.map((line, i) => (
+                        <div key={i} className="whitespace-pre-wrap">{line}</div>
+                    ))}
+                    <div className="flex">
+                        <div>C:\USERS\JHTCONNER&gt; </div>
+                        <input
+                            ref={inputRef}
+                            type="text"
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            onKeyDown={handleKeyDown}
+                            className="bg-black text-gray-300 outline-none border-none p-0 m-0 w-full"
+                            style={{
+                                caretColor: '#15f71c',
+                                fontFamily: 'Courier New, monospace',
+                                backgroundColor: 'transparent',
+                                color: '#15f71c',
+                                display: 'inline',
+                                fontSize: 'inherit',
+                                lineHeight: 'inherit',
+                                boxSizing: 'border-box',
+                                top: '0',
+                                left: '0'
+                            }}
+                            autoFocus
+                        />
+                    </div>
+                    <div ref={bottomRef} />
                 </div>
             </div>
-        </div>
+        </>
     );
 };
-
 
 export default CommandPrompt;
