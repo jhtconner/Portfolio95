@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const NetworkWindow = () => {
+    const [imgSrc, setImgSrc] = useState(null);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = '/images/networkNeighborhood.png';
+        img.onload = () => setImgSrc(img.src);
+    }, []);
+
     const handleConnect = () => {
         window.open('https://www.linkedin.com/in/jhtconner/', '_blank', 'noopener,noreferrer');
     };
@@ -28,7 +36,10 @@ const NetworkWindow = () => {
                     alt="Network Connection"
                     style={{
                         width: '125px',
-                        height: '220px'
+                        height: '220px',
+                        display: 'block',
+                        border: 'none',
+                        visibility: imgSrc ? 'visible' : 'hidden',
                     }}
                 />
             </div>

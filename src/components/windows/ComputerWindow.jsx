@@ -149,7 +149,7 @@ const CommandPrompt = () => {
             backgroundColor: '#000',
             color: '#15f71c',
             fontFamily: 'Courier New, monospace',
-            fontSize: '13px',
+            fontSize: '11px',
             height: '175%',
             width: '100%',
             margin: '-15px',

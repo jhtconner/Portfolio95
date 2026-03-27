@@ -59,7 +59,7 @@ const GitHubButton = ({ href, label, icon }) => {
             style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                padding: '4px 8px',
+                padding: '7px 12px',
                 backgroundColor: '#C0C0C0',
                 color: '#000000',
                 border: '2px outset #DFDFDF',
