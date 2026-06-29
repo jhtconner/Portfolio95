@@ -10,7 +10,7 @@ const NetworkWindow = () => {
     }, []);
 
     const handleConnect = () => {
-        window.open('https://www.linkedin.com/in/jhtconner/', '_blank', 'noopener,noreferrer');
+        window.open('https://www.linkedin.com/in/johnhconner/', '_blank', 'noopener,noreferrer');
     };
 
     return (

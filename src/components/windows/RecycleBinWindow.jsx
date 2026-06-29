@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 
 const BASE_PROJECTS = [
-    { href: "https://github.com/jhtconner/Portfolio95", label: "This Website!", icon: "/favicon.png" },
     { href: "https://github.com/jhtconner/PokeDexJS", label: "PokedexJS", icon: "/images/MasterBall.png" },
     { href: "https://github.com/jhtconner/DotPlotHackathon", label: "Medical Patient System", icon: "/images/doctor.png" },
     { href: "https://github.com/jhtconner/RWFM-72", label: "RWFM-72", icon: "/images/windturbine.png" },

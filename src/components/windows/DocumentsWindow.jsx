@@ -10,7 +10,7 @@ const DocumentsWindow = () => {
             { name: 'Resume', icon: '/images/file.png' }
         ],
         files: [
-            { name: 'CV.doc', icon: '/images/cv.png', link: 'https://www.linkedin.com/in/jhtconner/' },
+            { name: 'CV.doc', icon: '/images/cv.png', link: 'https://www.linkedin.com/in/johnhconner/' },
         ]
     };
 

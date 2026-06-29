@@ -68,7 +68,7 @@ const CommandPrompt = () => {
             newOutput.push(
                 '\u00A0',
                 'EDUCATION:',
-                '  • BSc Computer Science, Brunel University London - Graduation July \'26',
+                '  • BSc Computer Science, Brunel University London - 2023/2026',
                 '      - Specialization in Software Engineering',
                 '      - Key Modules: DSA, Data & Information, Group project',
                 '\u00A0',
@@ -106,7 +106,7 @@ const CommandPrompt = () => {
                 'CONTACT INFORMATION:',
                 '  • Email: JHTConner@outlook.com',
                 '  • GitHub: github.com/jhtconner',
-                '  • LinkedIn: linkedin.com/in/jhtconner',
+                '  • LinkedIn: linkedin.com/in/johnhconner',
                 '\u00A0'
             );
         } else if (command === 'clear') {
